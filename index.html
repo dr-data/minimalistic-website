@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- Making sure the web-site will scale fine on mobiles-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Trying to force IE to perform at its best-->
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <!-- Meta description, aim for about 150 characters-->
+        <meta name="description" content="This theme is a very beautiful and minimalistic theme with a gorgeous animation that will make the user remember your website and want to come back.">
+        <!-- Stylesheets-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rasa:300,400,700">
+        <link rel="stylesheet" href="./libs/materialize/css/materialize.min.css">
+        <link rel="stylesheet" href="./libs/textillate/assets/animate.css">
+        <link rel="stylesheet" href="./libs/fullpage/jquery.fullpage.css">
+        <link rel="stylesheet" href="./libs/pagepiling/jquery.pagepiling.css">
+        <link rel="stylesheet" href="./assets/css/linea.min.css">
+        <link rel="stylesheet" href="./assets/css/vava.min.css?v=3">
+        <!-- Favicons-->
+        <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" href="./favicons/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="./favicons/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="./favicons/manifest.json">
+        <link rel="shortcut icon" href="favicon.ico">
+        <meta name="msapplication-config" content="./favicons/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+        <!-- Site title-->
+        <title>Vava</title>
+    </head>
+    <body class="loading">
+        <!-- Navigation-->
+        <div class="navbar-fixed">
+            <nav class="classic">
+                <div class="nav-wrapper">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col s12">
+                                <!-- Classic navigation, visible on desktop only-->
+                                <ul class="hidden hide-on-med-and-down">
+                                    <li>
+                                        <a class="index-link underline" href="index.html">Home</a>
+                                    </li>
+                                    <li>
+                                        <a class="ajax-link" href="#/about">Artist | 關於子玉</a>
+                                    </li>
+                                    <li>
+                                        <a class="ajax-link" href="#/Appreciation">Art Appreciation | 名家評論</a>
+                                    </li>
+                                    <li>
+                                        <a class="ajax-link" href="#/Media">Media Coverage | 媒體報導</a>
+                                    </li>
+                                    <li>
+                                        <a class="ajax-link" href="#/Curator">Art Curator | 策展人</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-button" data-activates="dropdown-event" data-beloworigin="true" data-hover="true">Events | 展覽</a>
+                                    </li>
+                                </ul>
+                                <div class="dropdown-content" id="dropdown-event">
+                                    <ul>
+                                        <li>
+                                            <a class="index-link underline" href="index-classic-menu-light.html">Fine Art Asia</a>
+                                        </li>
+                                        <li>
+                                            <a class="index-link underline" href="index-classic-menu-dark.html">Parrot</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Medium/mobile slide out navigation-->
+                                <ul class="side-nav" id="slide-out">
+                                    <!-- Index side nav menu section-->
+                                    <li class="no-padding">
+                                        <ul class="collapsible collapsible-accordion">
+                                            <li>
+                                                <a class="collapsible-header">Index</a>
+                                                <div class="collapsible-body">
+                                                    <ul class="collapsible-body-list">
+                                                        <li>
+                                                            <a href="index-classic-menu-light.html">Light &amp; classic</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="index-classic-menu-dark.html">Dark &amp; classic</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="index-overlay-menu-light.html">Light &amp; overlay</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="index-overlay-menu-dark.html">Dark &amp; overlay</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- Work side nav menu section-->
+                                    <li class="no-padding">
+                                        <ul class="collapsible collapsible-accordion">
+                                            <li>
+                                                <a class="collapsible-header">Work</a>
+                                                <div class="collapsible-body">
+                                                    <ul class="collapsible-body-list">
+                                                        <li>
+                                                            <a class="ajax-link" href="#/work-1-column">1 Column</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="ajax-link" href="#/work-2-columns">2 Columns</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="ajax-link" href="#/work-3-columns">3 Columns</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="ajax-link" href="#/work-4-columns">4 Columns</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="ajax-link" href="#/about">About</a>
+                                    </li>
+                                    <li>
+                                        <a class="ajax-link" href="#/prices">Prices</a>
+                                    </li>
+                                    <!-- News side nav menu section-->
+                                    <li class="no-padding">
+                                        <ul class="collapsible collapsible-accordion">
+                                            <li>
+                                                <a class="collapsible-header">News</a>
+                                                <div class="collapsible-body">
+                                                    <ul class="collapsible-body-list">
+                                                        <li>
+                                                            <a class="ajax-link" href="#/news-grid">Grid</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="ajax-link" href="#/news-alternative">Alternative</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="ajax-link" href="#/contact">Contact</a>
+                                    </li>
+                                </ul>
+                                <!-- Logo/brand name--><span class="right hide-on-med-and-down"><span class="logo">Vava</span></span><span class="left show-on-medium-and-down hide-on-large-only"><span class="logo">Vava</span></span><span class="right show-on-medium-and-down hide-on-large-only"><a class="sidenav-toggle" id="sidenav-toggle" href="#" data-activates="slide-out">Menu</a></span></div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Main container where all the pages are going to be loaded-->
+        <main id="main">
+            <!-- Add the new menu and grid structure -->
+            <div class="container">
+                <ul class="tabs">
+                    <li class="tab"><a href="#all">All</a></li>
+                    <li class="tab"><a href="#sense-serendipity">心靈的風景 | Sense & Serendipity</a></li>
+                    <li class="tab"><a href="#gone-with-the-wind">雲想衣裳 | Gone With The Wind</a></li>
+                    <li class="tab"><a href="#april-story">春意盎然 | April Story</a></li>
+                    <li class="tab"><a href="#the-hours">風月同天 | The Hours</a></li>
+                    <li class="tab"><a href="#the-illusion-of-life">花樣年華 | The Illusion of Life</a></li>
+                </ul>
+                <div id="all" class="col s12">
+                    <div class="row">
+                        <!-- Add images in 4x2 grid for 'All' category -->
+                        <!-- Example image block -->
+                        <div class="col s12 m6 l3">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="./assets/images/work/example1.jpg">
+                                    <span class="card-title">Example 1</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Repeat similar blocks for other images -->
+                    </div>
+                </div>
+                <div id="sense-serendipity" class="col s12">
+                    <div class="row">
+                        <!-- Add images in 4x2 grid for 'Sense & Serendipity' category -->
+                        <!-- Example image block -->
+                        <div class="col s12 m6 l3">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="./assets/images/work/example2.jpg">
+                                    <span class="card-title">Example 2</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Repeat similar blocks for other images -->
+                    </div>
+                </div>
+                <!-- Repeat similar structure for other categories -->
+                <div id="gone-with-the-wind" class="col s12">
+                    <div class="row">
+                        <!-- Add images in 4x2 grid for 'Gone With The Wind' category -->
+                    </div>
+                </div>
+                <div id="april-story" class="col s12">
+                    <div class="row">
+                        <!-- Add images in 4x2 grid for 'April Story' category -->
+                    </div>
+                </div>
+                <div id="the-hours" class="col s12">
+                    <div class="row">
+                        <!-- Add images in 4x2 grid for 'The Hours' category -->
+                    </div>
+                </div>
+                <div id="the-illusion-of-life" class="col s12">
+                    <div class="row">
+                        <!-- Add images in 4x2 grid for 'The Illusion of Life' category -->
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Footer-->
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 l3 grey-text text-lighten-1">&copy; 1999—2016 Vava</div>
+                </div>
+            </div>
+        </footer>
+        <!-- Spinner-->
+        <div class="curtains" id="curtains">
+            <div class="spinner-wrapper" id="spinner-wrapper">
+                <canvas class="spinner" id="spinner" width="250" height="250"></canvas>
+            </div>
+        </div>
+        <!-- Libraries-->
+        <script src="./libs/jquery/jquery.min.js"></script>
+        <script src="./libs/ajax-navi/ajax-navi.js"></script>
+        <script src="./libs/materialize/js/materialize.min.js"></script>
+        <script src="./libs/textillate/jquery.textillate.js"></script>
+        <script src="./libs/textillate/assets/jquery.lettering.js"></script>
+        <script src="./libs/textillate/assets/jquery.fittext.js"></script>
+        <!-- Vava scripts-->
+        <script src="./assets/js/config.js"></script>
+        <script src="./assets/js/vava.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('ul.tabs').tabs();
+            });
+        </script>
+    </body>
+</html>
